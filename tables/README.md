@@ -92,12 +92,53 @@ Calculates Child Tax Credit and Additional Child Tax Credit.
 
 ## Example Table Format
 
+Each decision table should include citation rows to document legal authority:
+
 ```
-                    Column 1    Column 2    Column 3
-Condition 1         value1      value2      value3
-Condition 2         value4      value5      value6
-Action 1            result1     result2     result3
-Action 2            result4     result5     result6
+                        Column 1            Column 2            Column 3
+POLICY STATEMENT        [Legal citation]    [Legal citation]    [Legal citation]
+Condition 1            value1              value2              value3
+Condition 2            value4              value5              value6
+Action 1               result1             result2             result3
+Action 2               result4             result5             result6
+EXPLANATION            [Explanation 1]      [Explanation 2]     [Explanation 3]
+CITATION               IRC §X(y)           IRC §X(z)           Pub 17, Pg X
+CITATION               Rev. Proc. 20XX-XX  Form Instructions   Revenue Ruling
+```
+
+### Standard Deduction Example
+
+```
+Decision Table: Standard_Deduction_DT
+Type: FIRST (execute first matching column)
+
+                        MFJ         Single      HOH
+POLICY STATEMENT        Standard deduction for married filing jointly
+                        Standard deduction for single filers
+                        Standard deduction for head of household
+
+Filing Status           MFJ         Single      HOH
+Tax Year               2024        2024        2024
+Age < 65               Y           Y           Y
+Not Blind              Y           Y           Y
+
+Set Deduction          29200       14600       21900
+Record Decision        X           X           X
+Add Citation           X           X           X
+
+EXPLANATION            Married couples filing jointly receive $29,200 standard deduction for 2024, indexed for inflation
+                       Single filers receive $14,600 standard deduction
+                       Head of household filers receive $21,900 standard deduction
+
+CITATION               IRC §63(c)(2)(A)
+                       IRC §63(c)(2)(C)
+                       IRC §63(c)(2)(B)
+CITATION               Rev. Proc. 2023-34, Section 3.12
+                       Rev. Proc. 2023-34
+                       Rev. Proc. 2023-34
+CITATION               Form 1040 Instructions, Line 12
+                       Form 1040 Instructions
+                       Form 1040 Instructions
 ```
 
 ## Tax Year

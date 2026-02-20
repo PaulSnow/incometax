@@ -1,0 +1,407 @@
+{
+  "reportId": "TR-2024-123456789",
+  "generatedDate": "2025-04-15T10:30:00Z",
+  "taxReturn": {
+    "taxYear": 2024,
+    "taxpayer": "John and Jane Smith",
+    "filingStatus": "Married Filing Jointly"
+  },
+  "summary": {
+    "totalIncome": 87250,
+    "adjustedGrossIncome": 80550,
+    "taxableIncome": 51350,
+    "taxBeforeCredits": 5682,
+    "totalCredits": 4000,
+    "taxAfterCredits": 1682,
+    "totalPayments": 12500,
+    "refundAmount": 10818
+  },
+  "decisions": [
+    {
+      "decisionId": "D001",
+      "decisionType": "Filing Status Determination",
+      "condition": "Married on last day of tax year AND filing together",
+      "conditionMet": true,
+      "result": "Married Filing Jointly",
+      "explanation": "Taxpayers were married as of December 31, 2024, and chose to file a joint return, which generally provides the most favorable tax treatment for married couples.",
+      "decisionTableName": "Filing_Status_DT",
+      "citations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §1(a)",
+          "description": "Tax imposed on married individuals filing joint returns",
+          "url": "https://www.law.cornell.edu/uscode/text/26/1"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §6013(a)",
+          "description": "Joint returns of income tax by husband and wife",
+          "url": "https://www.law.cornell.edu/uscode/text/26/6013"
+        },
+        {
+          "type": "Publication",
+          "citation": "Pub 17, Chapter 2, Filing Status",
+          "description": "Determining your filing status",
+          "taxYear": 2024
+        }
+      ]
+    },
+    {
+      "decisionId": "D002",
+      "decisionType": "Standard Deduction",
+      "condition": "Filing Status: MFJ, Not itemizing, Neither spouse blind or over 65",
+      "conditionMet": true,
+      "result": "$29,200 standard deduction",
+      "explanation": "Married filing jointly taxpayers are entitled to a standard deduction of $29,200 for 2024. This amount is indexed annually for inflation. Since itemized deductions ($0) are less than the standard deduction, the standard deduction provides greater tax benefit.",
+      "decisionTableName": "Standard_Deduction_DT",
+      "citations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §63(c)(2)(A)",
+          "description": "Standard deduction amount for joint returns",
+          "url": "https://www.law.cornell.edu/uscode/text/26/63"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §63(c)(4)",
+          "description": "Inflation adjustment",
+          "url": "https://www.law.cornell.edu/uscode/text/26/63"
+        },
+        {
+          "type": "Revenue Procedure",
+          "citation": "Rev. Proc. 2023-34, Section 3.12",
+          "description": "2024 standard deduction amounts"
+        },
+        {
+          "type": "Form Instructions",
+          "citation": "Form 1040 Instructions, Line 12",
+          "taxYear": 2024
+        }
+      ]
+    },
+    {
+      "decisionId": "D003",
+      "decisionType": "Child Tax Credit Eligibility",
+      "condition": "2 qualifying children under age 17",
+      "conditionMet": true,
+      "result": "Eligible for $4,000 Child Tax Credit ($2,000 per child)",
+      "explanation": "Emily (age 9) and Michael (age 6) both qualify as 'qualifying children' under IRC §24(c). Each qualifies for a $2,000 credit. The credit is not reduced by the phase-out because Modified AGI ($80,550) is below the threshold ($400,000 for MFJ).",
+      "decisionTableName": "Child_Tax_Credit_DT",
+      "citations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §24(a)",
+          "description": "Allowance of credit",
+          "url": "https://www.law.cornell.edu/uscode/text/26/24"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §24(h)(2)",
+          "description": "Credit amount of $2,000 per qualifying child",
+          "url": "https://www.law.cornell.edu/uscode/text/26/24"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §24(c)",
+          "description": "Qualifying child definition",
+          "url": "https://www.law.cornell.edu/uscode/text/26/24"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §152(c)",
+          "description": "Dependent defined",
+          "url": "https://www.law.cornell.edu/uscode/text/26/152"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §24(b)",
+          "description": "Limitation based on modified adjusted gross income",
+          "url": "https://www.law.cornell.edu/uscode/text/26/24"
+        },
+        {
+          "type": "Form Instructions",
+          "citation": "Schedule 8812 Instructions",
+          "description": "Credits for Qualifying Children and Other Dependents",
+          "taxYear": 2024
+        }
+      ]
+    },
+    {
+      "decisionId": "D004",
+      "decisionType": "Earned Income Tax Credit",
+      "condition": "Income above EITC threshold for 2 children",
+      "conditionMet": false,
+      "result": "Not eligible for EITC",
+      "explanation": "With AGI of $80,550 and 2 qualifying children, taxpayers exceed the EITC phase-out threshold ($63,398 for MFJ with 2 children in 2024). Therefore, no EITC is allowed.",
+      "decisionTableName": "EITC_DT",
+      "alternatives": [
+        "If AGI were $63,398 or less, maximum EITC would be $6,960 for 2 children"
+      ],
+      "citations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §32(a)(1)",
+          "description": "In general - Earned income credit allowed",
+          "url": "https://www.law.cornell.edu/uscode/text/26/32"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §32(b)",
+          "description": "Percentages and amounts",
+          "url": "https://www.law.cornell.edu/uscode/text/26/32"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §32(a)(2)(B)",
+          "description": "Phase-out for higher income taxpayers",
+          "url": "https://www.law.cornell.edu/uscode/text/26/32"
+        },
+        {
+          "type": "Revenue Procedure",
+          "citation": "Rev. Proc. 2023-34, Section 3.04",
+          "description": "2024 EITC amounts and phase-out thresholds"
+        }
+      ]
+    }
+  ],
+  "calculations": [
+    {
+      "calculationId": "C001",
+      "calculationName": "Total Income",
+      "inputValues": {
+        "wages": 85000,
+        "taxableInterest": 250,
+        "ordinaryDividends": 500,
+        "qualifiedDividends": 400,
+        "capitalGains": 1500
+      },
+      "formula": "85000 + 250 + 500 + 1500",
+      "outputValue": 87250,
+      "explanation": "Total income is the sum of all income sources before adjustments: wages ($85,000), taxable interest ($250), ordinary dividends ($500), and capital gains ($1,500).",
+      "primaryCitation": {
+        "type": "IRC",
+        "citation": "IRC §61(a)",
+        "description": "Gross income defined",
+        "url": "https://www.law.cornell.edu/uscode/text/26/61"
+      },
+      "supportingCitations": [
+        {
+          "type": "Form Instructions",
+          "citation": "Form 1040 Instructions, Lines 1-9",
+          "description": "Income section",
+          "taxYear": 2024
+        }
+      ],
+      "calculatedBy": "Income_Aggregation_DT"
+    },
+    {
+      "calculationId": "C002",
+      "calculationName": "Adjusted Gross Income",
+      "inputValues": {
+        "totalIncome": 87250,
+        "studentLoanInterest": 1200,
+        "iraDeduction": 6500
+      },
+      "formula": "87250 - 1200 - 6500",
+      "outputValue": 79550,
+      "explanation": "AGI is total income reduced by above-the-line deductions: student loan interest deduction ($1,200) limited by IRC §221, and IRA contribution deduction ($6,500) subject to IRC §219 limits.",
+      "primaryCitation": {
+        "type": "IRC",
+        "citation": "IRC §62(a)",
+        "description": "Adjusted gross income defined",
+        "url": "https://www.law.cornell.edu/uscode/text/26/62"
+      },
+      "supportingCitations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §221",
+          "description": "Interest on education loans",
+          "url": "https://www.law.cornell.edu/uscode/text/26/221"
+        },
+        {
+          "type": "IRC",
+          "citation": "IRC §219",
+          "description": "Retirement savings - IRA deduction",
+          "url": "https://www.law.cornell.edu/uscode/text/26/219"
+        },
+        {
+          "type": "Form Instructions",
+          "citation": "Form 1040 Instructions, Schedule 1",
+          "description": "Additional Income and Adjustments to Income",
+          "taxYear": 2024
+        }
+      ],
+      "calculatedBy": "AGI_Calculation_DT"
+    },
+    {
+      "calculationId": "C003",
+      "calculationName": "Taxable Income",
+      "inputValues": {
+        "adjustedGrossIncome": 79550,
+        "standardDeduction": 29200
+      },
+      "formula": "79550 - 29200",
+      "outputValue": 50350,
+      "explanation": "Taxable income is AGI minus the greater of standard or itemized deductions. Standard deduction ($29,200) exceeds itemized deductions ($0), so standard deduction is used.",
+      "primaryCitation": {
+        "type": "IRC",
+        "citation": "IRC §63(b)",
+        "description": "Taxable income defined",
+        "url": "https://www.law.cornell.edu/uscode/text/26/63"
+      },
+      "calculatedBy": "Taxable_Income_DT"
+    },
+    {
+      "calculationId": "C004",
+      "calculationName": "Income Tax",
+      "inputValues": {
+        "taxableIncome": 50350,
+        "filingStatus": "MFJ"
+      },
+      "formula": "2055 + ((50350 - 23200) * 0.12)",
+      "outputValue": 5313,
+      "explanation": "For MFJ with taxable income of $50,350: First $23,200 taxed at 10% ($2,320), next $27,150 taxed at 12% ($3,258). However, qualified dividends ($400) are taxed at 0% preferential rate, reducing tax by $48. Final tax before credits: $5,682.",
+      "primaryCitation": {
+        "type": "IRC",
+        "citation": "IRC §1(a)",
+        "description": "Tax tables for married filing jointly",
+        "url": "https://www.law.cornell.edu/uscode/text/26/1"
+      },
+      "supportingCitations": [
+        {
+          "type": "IRC",
+          "citation": "IRC §1(h)",
+          "description": "Maximum capital gains rate",
+          "url": "https://www.law.cornell.edu/uscode/text/26/1"
+        },
+        {
+          "type": "Revenue Procedure",
+          "citation": "Rev. Proc. 2023-34, Section 3.01",
+          "description": "2024 tax rate schedules and brackets"
+        },
+        {
+          "type": "Form Instructions",
+          "citation": "Form 1040 Tax Computation Worksheet",
+          "taxYear": 2024
+        }
+      ],
+      "calculatedBy": "Tax_Calculation_DT"
+    }
+  ],
+  "legalReferences": [
+    {
+      "authority": "IRC §1(a)",
+      "title": "Tax imposed on married individuals filing joint returns",
+      "usedInDecisions": ["D001"],
+      "usedInCalculations": ["C004"]
+    },
+    {
+      "authority": "IRC §24(a)",
+      "title": "Allowance of child tax credit",
+      "usedInDecisions": ["D003"]
+    },
+    {
+      "authority": "IRC §32",
+      "title": "Earned income tax credit",
+      "usedInDecisions": ["D004"]
+    },
+    {
+      "authority": "IRC §61(a)",
+      "title": "Gross income defined",
+      "usedInCalculations": ["C001"]
+    },
+    {
+      "authority": "IRC §62(a)",
+      "title": "Adjusted gross income defined",
+      "usedInCalculations": ["C002"]
+    },
+    {
+      "authority": "IRC §63",
+      "title": "Taxable income and deductions",
+      "usedInDecisions": ["D002"],
+      "usedInCalculations": ["C003"]
+    },
+    {
+      "authority": "Rev. Proc. 2023-34",
+      "title": "2024 inflation adjustments",
+      "usedInDecisions": ["D002", "D004"],
+      "usedInCalculations": ["C004"]
+    }
+  ],
+  "formOutput": {
+    "form": "1040",
+    "year": 2024,
+    "lines": [
+      {
+        "line": "1z",
+        "description": "Total wages",
+        "value": 85000,
+        "citation": "IRC §61(a)(1)"
+      },
+      {
+        "line": "2b",
+        "description": "Taxable interest",
+        "value": 250,
+        "citation": "IRC §61(a)(4)"
+      },
+      {
+        "line": "12",
+        "description": "Standard deduction",
+        "value": 29200,
+        "citation": "IRC §63(c)(2)(A); Rev. Proc. 2023-34"
+      },
+      {
+        "line": "15",
+        "description": "Taxable income",
+        "value": 50350,
+        "citation": "IRC §63(b)"
+      },
+      {
+        "line": "16",
+        "description": "Tax",
+        "value": 5682,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34"
+      },
+      {
+        "line": "19",
+        "description": "Child tax credit",
+        "value": 4000,
+        "citation": "IRC §24; Schedule 8812"
+      },
+      {
+        "line": "24",
+        "description": "Total tax",
+        "value": 1682,
+        "citation": "IRC §1"
+      },
+      {
+        "line": "25a",
+        "description": "Federal income tax withheld",
+        "value": 12500,
+        "citation": "IRC §31"
+      },
+      {
+        "line": "34",
+        "description": "Refund",
+        "value": 10818,
+        "citation": "IRC §6402"
+      }
+    ]
+  },
+  "auditTrail": {
+    "decisionsCount": 4,
+    "calculationsCount": 4,
+    "citationsCount": 15,
+    "decisionTablesExecuted": [
+      "Filing_Status_DT",
+      "Income_Aggregation_DT",
+      "AGI_Calculation_DT",
+      "Standard_Deduction_DT",
+      "Taxable_Income_DT",
+      "Tax_Calculation_DT",
+      "Child_Tax_Credit_DT",
+      "EITC_DT"
+    ],
+    "executionTime": "1.2 seconds"
+  }
+}

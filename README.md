@@ -2,6 +2,18 @@
 
 A US Federal Income Tax filing system built using DTRules decision table engine (Go implementation).
 
+## Core Principle: Full Legal Traceability
+
+**Every tax decision and calculation in this system links directly to the actual tax law and IRS instructions.**
+
+Unlike typical tax software that operates as a "black box," this system generates comprehensive reports showing:
+- The legal authority (IRC section, IRS publication, etc.) for every decision
+- Complete calculation worksheets with formulas and citations
+- Plain-English explanations of why each rule applies
+- Alternative scenarios that were considered
+
+This creates a fully auditable tax return where every number can be verified against actual tax law.
+
 ## Project Structure
 
 ```
@@ -9,6 +21,8 @@ incometax/
 ├── tables/          # Excel decision tables for tax rules
 ├── xml/            # Compiled XML decision tables
 ├── entities/       # Entity definition documents
+├── references/     # Tax law citations and legal references
+├── examples/       # Sample inputs and outputs with citations
 ├── cmd/
 │   └── incometax/  # Main application entry point
 └── pkg/

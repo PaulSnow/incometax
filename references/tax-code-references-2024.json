@@ -1,0 +1,203 @@
+{
+  "taxYear": 2024,
+  "lastUpdated": "2025-02-20",
+  "version": "1.0",
+  "references": [
+    {
+      "id": "IRC_1_a",
+      "type": "IRC",
+      "citation": "IRC §1(a)",
+      "title": "Tax imposed on married individuals filing joint returns",
+      "section": "1",
+      "subsection": "a",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1",
+      "summary": "Defines tax rates and brackets for married couples filing jointly",
+      "effectiveDate": "1954-08-16",
+      "lastAmended": "2017-12-22",
+      "amendedBy": "Tax Cuts and Jobs Act of 2017",
+      "relatedSections": ["IRC §1(h)", "IRC §1(j)", "IRC §6013"],
+      "notes": "Tax brackets are indexed annually for inflation per IRC §1(f)"
+    },
+    {
+      "id": "IRC_24_a",
+      "type": "IRC",
+      "citation": "IRC §24(a)",
+      "title": "Allowance of child tax credit",
+      "section": "24",
+      "subsection": "a",
+      "url": "https://www.law.cornell.edu/uscode/text/26/24",
+      "summary": "Allows a credit against tax for each qualifying child",
+      "effectiveDate": "1997-08-05",
+      "lastAmended": "2017-12-22",
+      "amendedBy": "Tax Cuts and Jobs Act of 2017",
+      "relatedSections": ["IRC §24(b)", "IRC §24(c)", "IRC §24(h)", "IRC §152"],
+      "notes": "Credit amount increased to $2,000 by TCJA; partially refundable"
+    },
+    {
+      "id": "IRC_24_h_2",
+      "type": "IRC",
+      "citation": "IRC §24(h)(2)",
+      "title": "Child tax credit amount",
+      "section": "24",
+      "subsection": "h)(2",
+      "url": "https://www.law.cornell.edu/uscode/text/26/24",
+      "summary": "Credit amount is $2,000 per qualifying child",
+      "effectiveDate": "2018-01-01",
+      "expirationDate": "2025-12-31",
+      "relatedSections": ["IRC §24(a)", "IRC §24(i)"],
+      "notes": "Scheduled to revert to $1,000 after 2025 unless extended"
+    },
+    {
+      "id": "IRC_63_c_2_A",
+      "type": "IRC",
+      "citation": "IRC §63(c)(2)(A)",
+      "title": "Standard deduction - joint returns",
+      "section": "63",
+      "subsection": "c)(2)(A",
+      "url": "https://www.law.cornell.edu/uscode/text/26/63",
+      "summary": "Defines standard deduction amount for married filing jointly",
+      "effectiveDate": "1944-05-29",
+      "lastAmended": "2017-12-22",
+      "amendedBy": "Tax Cuts and Jobs Act of 2017",
+      "relatedSections": ["IRC §63(c)(4)", "IRC §1(f)(3)"],
+      "notes": "Indexed annually for inflation; nearly doubled by TCJA"
+    },
+    {
+      "id": "IRC_32_a",
+      "type": "IRC",
+      "citation": "IRC §32(a)",
+      "title": "Earned income tax credit allowed",
+      "section": "32",
+      "subsection": "a",
+      "url": "https://www.law.cornell.edu/uscode/text/26/32",
+      "summary": "Allows a credit for certain low-income taxpayers with earned income",
+      "effectiveDate": "1975-03-29",
+      "lastAmended": "2021-03-11",
+      "amendedBy": "American Rescue Plan Act of 2021",
+      "relatedSections": ["IRC §32(b)", "IRC §32(c)", "IRC §32(i)"],
+      "notes": "Complex phase-in and phase-out based on income and family size"
+    },
+    {
+      "id": "REV_PROC_2023_34",
+      "type": "Revenue Procedure",
+      "citation": "Rev. Proc. 2023-34",
+      "title": "2024 Inflation Adjustments",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-23-34.pdf",
+      "summary": "Annual inflation adjustments for tax year 2024",
+      "publishedDate": "2023-11-09",
+      "effectiveDate": "2024-01-01",
+      "taxYear": 2024,
+      "sections": {
+        "3.01": "Tax rate tables",
+        "3.04": "Earned Income Credit amounts",
+        "3.12": "Standard deduction amounts"
+      },
+      "amounts": {
+        "standardDeduction_MFJ": 29200,
+        "standardDeduction_Single": 14600,
+        "standardDeduction_HOH": 21900,
+        "personalExemption": 0,
+        "EITC_max_0_children": 632,
+        "EITC_max_1_child": 4213,
+        "EITC_max_2_children": 6960,
+        "EITC_max_3_children": 7830
+      }
+    },
+    {
+      "id": "FORM_1040_INST_2024",
+      "type": "Form Instructions",
+      "citation": "Form 1040 Instructions (2024)",
+      "title": "Instructions for Form 1040",
+      "url": "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+      "taxYear": 2024,
+      "publishedDate": "2024-12-15",
+      "sections": {
+        "line_1": "Wages, salaries, tips",
+        "line_12": "Standard deduction or itemized deductions",
+        "line_15": "Taxable income",
+        "line_16": "Tax",
+        "line_19": "Child tax credit and credit for other dependents"
+      }
+    },
+    {
+      "id": "PUB_17_2024",
+      "type": "Publication",
+      "citation": "Publication 17 (2024)",
+      "title": "Your Federal Income Tax",
+      "url": "https://www.irs.gov/pub/irs-pdf/p17.pdf",
+      "taxYear": 2024,
+      "publishedDate": "2025-01-15",
+      "chapters": {
+        "1": "Filing Information",
+        "2": "Filing Status",
+        "3": "Dependents",
+        "34": "Child Tax Credit"
+      },
+      "notes": "Comprehensive guide to individual income tax"
+    },
+    {
+      "id": "SCHEDULE_8812_INST_2024",
+      "type": "Form Instructions",
+      "citation": "Schedule 8812 Instructions (2024)",
+      "title": "Credits for Qualifying Children and Other Dependents",
+      "url": "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf",
+      "taxYear": 2024,
+      "publishedDate": "2024-12-15",
+      "relatedForms": ["Form 1040", "Schedule 8812"],
+      "notes": "Detailed instructions for calculating Child Tax Credit and Additional Child Tax Credit"
+    }
+  ],
+  "taxBrackets2024": {
+    "MFJ": [
+      {
+        "bracket": 1,
+        "rate": 0.10,
+        "min": 0,
+        "max": 23200,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 2,
+        "rate": 0.12,
+        "min": 23200,
+        "max": 94300,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 3,
+        "rate": 0.22,
+        "min": 94300,
+        "max": 201050,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 4,
+        "rate": 0.24,
+        "min": 201050,
+        "max": 383900,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 5,
+        "rate": 0.32,
+        "min": 383900,
+        "max": 487450,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 6,
+        "rate": 0.35,
+        "min": 487450,
+        "max": 731200,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      },
+      {
+        "bracket": 7,
+        "rate": 0.37,
+        "min": 731200,
+        "max": null,
+        "citation": "IRC §1(a); Rev. Proc. 2023-34 §3.01"
+      }
+    ]
+  }
+}
