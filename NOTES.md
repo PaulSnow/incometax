@@ -76,13 +76,28 @@ Maintain tax year specific data:
 - 2024 credit phase-out thresholds
 - Update annually
 
+## DTRules Data Formats
+
+DTRules Go implementation supports multiple formats:
+
+- **Decision Tables Storage**: XML (compiled from Excel)
+- **Entity Definitions Storage**: XML (compiled from Excel)
+- **Input Data**: JSON (for API execution)
+- **Output Results**: JSON (from API execution)
+- **REST API**: Full JSON API for executing rules
+
+This means we can:
+1. Define rules in Excel
+2. Compile to XML
+3. Execute with JSON input data (taxpayer information)
+4. Receive JSON output (calculated tax results)
+
 ## Research Needed
 
-1. Exact DTRules Go implementation usage and API
-2. Excel template format for entity definitions
-3. Excel template format for decision tables
-4. Compilation process from Excel to XML
-5. Loading and executing decision tables in Go
+1. Excel template format for entity definitions
+2. Excel template format for decision tables
+3. Compilation process from Excel to XML
+4. Integration approaches (library vs. REST API vs. CLI)
 
 ## References
 

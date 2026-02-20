@@ -1,0 +1,74 @@
+{
+  "taxReturn": {
+    "taxYear": 2024,
+    "taxpayer": {
+      "ssn": "123-45-6789",
+      "firstName": "John",
+      "lastName": "Smith",
+      "dateOfBirth": "1985-06-15",
+      "filingStatus": "MFJ",
+      "isBlind": false,
+      "canBeClaimedAsDependent": false
+    },
+    "spouse": {
+      "ssn": "987-65-4321",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "dateOfBirth": "1987-03-22",
+      "isBlind": false,
+      "canBeClaimedAsDependent": false
+    },
+    "dependents": [
+      {
+        "ssn": "111-22-3333",
+        "firstName": "Emily",
+        "lastName": "Smith",
+        "dateOfBirth": "2015-09-10",
+        "relationship": "daughter",
+        "monthsLived": 12,
+        "isQualifyingChild": true,
+        "isStudent": false,
+        "isDisabled": false
+      },
+      {
+        "ssn": "444-55-6666",
+        "firstName": "Michael",
+        "lastName": "Smith",
+        "dateOfBirth": "2018-01-05",
+        "relationship": "son",
+        "monthsLived": 12,
+        "isQualifyingChild": true,
+        "isStudent": false,
+        "isDisabled": false
+      }
+    ],
+    "income": {
+      "wages": 85000,
+      "tips": 0,
+      "taxableInterest": 250,
+      "ordinaryDividends": 500,
+      "qualifiedDividends": 400,
+      "capitalGains": 1500,
+      "businessIncome": 0,
+      "otherIncome": 0
+    },
+    "deductions": {
+      "itemizedDeductions": 0,
+      "useItemized": false,
+      "qbiDeduction": 0,
+      "studentLoanInterest": 1200,
+      "iraDeduction": 6500,
+      "healthSavingsAccount": 0
+    },
+    "credits": {
+      "educationCredits": 0,
+      "childCareCredit": 0,
+      "retirementSavingsCredit": 0,
+      "otherCredits": 0
+    },
+    "payments": {
+      "federalWithholding": 12500,
+      "estimatedPayments": 0
+    }
+  }
+}

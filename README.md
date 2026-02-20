@@ -54,7 +54,16 @@ TBD - Will be added as implementation progresses
 1. Define tax-related entities in Excel Entity Definition Documents (EDD)
 2. Create decision tables in Excel for tax rules
 3. Compile Excel files to XML using DTRules compiler
-4. Execute rules through the Go application
+4. Execute rules through the Go application or REST API
+
+## Data Formats
+
+- **Rule Definitions**: Excel spreadsheets (human-readable)
+- **Compiled Rules**: XML (for execution engine)
+- **Input Data**: JSON (taxpayer information, income, deductions, etc.)
+- **Output Results**: JSON (calculated tax liability, credits, refund/owed)
+
+The DTRules Go implementation provides a REST API that accepts JSON input and returns JSON output, making it easy to integrate with web applications or command-line tools.
 
 ## References
 
