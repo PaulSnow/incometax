@@ -21,6 +21,11 @@ xml/*.xml
 ~$*.xls
 ~$*.xlsx
 
+# Downloaded IRS forms and publications (regenerable)
+forms/
+tax-code/
+publications/
+
 # IDE
 .idea/
 .vscode/
